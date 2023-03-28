@@ -7,13 +7,19 @@ let favouriteColor = prompt("what's your favourite color?");
 
 let divider = prompt("Choose any number");
 
+if (isNaN(divider)) 
+        { alert("Must input numbers") };
+
 divider = parseInt(divider);
 
 let dividend = prompt("Choose a differrent number");
 
+if (isNaN(dividend)) 
+        { alert("Must input numbers") };
+
 dividend = parseInt(dividend);
 
-let fraction = (dividend/divider);
+let fraction = (dividend / divider);
 
 console.log(` 
 ---------USER PROFILE---------
@@ -32,6 +38,6 @@ console.log(password);
 
 
 
-document.getElementById("display").innerHTML = password ;
+document.getElementById("display").innerHTML = password;
 
 
