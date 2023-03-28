@@ -39,6 +39,8 @@ while (isNaN(second)) {
 
 let fraction = (second / first);
 
+fraction.toFixed(2)
+
 console.log(` 
 ---------USER PROFILE---------
 
