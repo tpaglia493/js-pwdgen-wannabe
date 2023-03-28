@@ -1,19 +1,19 @@
 
-let name = prompt("What's your name?")
+let name = prompt("What's your name?");
 
-let surname = prompt("what's your surname?")
+let surname = prompt("what's your surname?");
 
-let favouriteColor = prompt("what's your favourite color?")
+let favouriteColor = prompt("what's your favourite color?");
 
-let divider = prompt("Choose any number")
+let divider = prompt("Choose any number");
 
-divider = parseInt(divider)
+divider = parseInt(divider);
 
-let dividend = prompt("Choose a differrent number")
+let dividend = prompt("Choose a differrent number");
 
-dividend = parseInt(dividend)
+dividend = parseInt(dividend);
 
-let fraction = (dividend/divider)
+let fraction = (dividend/divider);
 
 console.log(` 
 ---------USER PROFILE---------
@@ -26,7 +26,10 @@ FAVOURITE COLOR --> ${favouriteColor}
 
 
 ----------PASSWORD----------`)
-console.log(name + surname + favouriteColor + fraction)
+console.log(name + surname + favouriteColor + fraction);
 
+let password = (name + surname + favouriteColor + fraction)
+
+document.getElementById("display").innerHTML = password ;
 
 
