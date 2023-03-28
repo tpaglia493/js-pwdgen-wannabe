@@ -5,19 +5,25 @@ let surname = prompt("what's your surname?");
 
 let favouriteColor = prompt("what's your favourite color?");
 
-let divider = prompt("Choose any number");
+let divider = 'x'
 
-if (isNaN(divider)) 
-        { alert("Must input numbers") };
+while (isNaN(divider)) {
+    divider = prompt("Choose any number");
 
-divider = parseInt(divider);
+    if (isNaN(divider)) { alert("Must input numbers") };
 
-let dividend = prompt("Choose a differrent number");
+    divider = parseInt(divider);
+};
 
-if (isNaN(dividend)) 
-        { alert("Must input numbers") };
+let dividend = "y";
 
-dividend = parseInt(dividend);
+while (isNaN(dividend)) {
+    dividend = prompt("Choose a different number");
+
+    if (isNaN(dividend)) { alert("Must input numbers") };
+
+    dividend = parseInt(dividend);
+};
 
 let fraction = (dividend / divider);
 
