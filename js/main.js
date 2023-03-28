@@ -26,9 +26,11 @@ FAVOURITE COLOR --> ${favouriteColor}
 
 
 ----------PASSWORD----------`)
-console.log(name + surname + favouriteColor + fraction);
-
 let password = (name + surname + favouriteColor + fraction)
+
+console.log(password);
+
+
 
 document.getElementById("display").innerHTML = password ;
 
